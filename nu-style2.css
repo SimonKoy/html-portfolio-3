@@ -1,0 +1,272 @@
+/*global settings */
+* {
+    margin: 8 8 8 8;
+    padding: 8px;
+    display: grid;
+}
+
+h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #4a4a4d;
+        font-weight: 500;
+    }
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #79797a;
+    font-weight: 500;
+}
+
+li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #79797a;
+    font-weight: 500;
+}
+/* GOOGLE FONTS _ ROBOTO */
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+/* main container hjolding everything */
+.container {
+    background-color: #ffffff;
+
+}
+
+
+/* Logo display */
+.logo {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    width: 100%;
+    /*background-color: rgb(174, 224, 151);*/
+}
+
+/* navbar menu */
+.navbar {
+
+    display: flex;
+    position: sticky;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 2px;
+    top: 0;
+    background-size: cover;
+    /* background-color: #e9eff5 */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: beige;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+    color: #ffd700;
+}
+
+.rightNav {
+    text-align: right;
+}
+
+#search {
+    padding: 8px;
+    border: 2px solid #4682B4;
+    border-radius: 5px;
+    background-color: aliceblue;
+    width: 100px;
+    
+}
+
+.btn {
+    background: #214a7c;
+    height: auto;
+    width: 100%;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #ffd700;
+}
+
+.about {
+    background: rgb(6,125,156);
+background: -moz-linear-gradient(180deg, rgba(6,125,156,1) 15%, rgba(72,209,249,1) 40%, rgba(255,255,255,1) 58%);
+background: -webkit-linear-gradient(180deg, rgba(6,125,156,1) 15%, rgba(72,209,249,1) 40%, rgba(255,255,255,1) 58%);
+background: linear-gradient(180deg, rgba(6,125,156,1) 15%, rgba(72,209,249,1) 40%, rgba(255,255,255,1) 58%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#067d9c",endColorstr="#ffffff",GradientType=1);
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 15px;
+    height: 150px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.about2 {
+    display: block;
+    flex:1;
+    justify-content: center;
+    justify-items: center;
+    background-color: #fff;
+    position: sticky;
+    padding-top: 5px;
+    padding-bottom: 80px;
+}
+
+
+.interests {
+    background: rgb(6,125,156);
+background: -moz-linear-gradient(0deg, rgba(6,125,156,1) 15%, rgba(72,209,249,1) 40%, rgba(255,255,255,1) 58%);
+background: -webkit-linear-gradient(0deg, rgba(6,125,156,1) 15%, rgba(72,209,249,1) 40%, rgba(255,255,255,1) 58%);
+background: linear-gradient(0deg, rgba(6,125,156,1) 15%, rgba(72,209,249,1) 40%, rgba(255,255,255,1) 58%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#067d9c",endColorstr="#ffffff",GradientType=1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 80px;
+
+
+}
+
+.card1 {
+    background-color: #E8E8E2;
+    border-radius: 25px;
+    flex-grow: 1;
+    flex-basis: 250px;
+}
+
+.card2 {
+    background-color: #E8E8E2;
+    border-radius: 25px;
+    flex-grow: 1;
+    flex-basis: 250px;
+}
+
+/*.card3 {
+    background-color: #E8E8E2;
+    border-radius: 25px;
+    flex-grow: 1;
+    flex-basis: 250px;
+} */
+
+.contact {
+    background-color: #fff;
+    justify-content: center;
+    padding-left: 20px;
+    padding-bottom: 80px;
+}
+
+#maps {
+    display: flex;
+    float:left;
+    justify-content:center;
+    gap:25px
+}
+
+.footer {
+    background: rgb(6,125,156);
+    color: rgb(218, 218, 218);
+    text-align: center;
+    height: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 550px) {
+    .card {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 3fr;
+    }
+}
